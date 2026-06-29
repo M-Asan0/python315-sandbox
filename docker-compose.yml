@@ -1,0 +1,7 @@
+services:
+  py315:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: sleep infinity
