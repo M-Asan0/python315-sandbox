@@ -2,7 +2,7 @@ import copy
 
 MISSING = sentinel('MISSING')
 
-def greet(name: str | None | Missing = MISSING):    # 文字列、None、未指定マーカーのどれかに限定できる
+def greet(name: str | None | MISSING = MISSING):    # 文字列、None、未指定マーカーのどれかに限定できる
     if name is MISSING:
         print("何も渡されてない")
     else:
