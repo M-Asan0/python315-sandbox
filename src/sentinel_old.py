@@ -18,5 +18,5 @@ print(_MISSING)     # print(_MISSING)
 config = {"timeout": _MISSING}
 
 config_copy = copy.deepcopy(config)
-print(config_copy["timeout"] is _MISSING)  # False! 別物になる
+print(config_copy["timeout"] is _MISSING)  # False 別物になる
 

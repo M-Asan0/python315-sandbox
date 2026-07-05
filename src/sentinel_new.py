@@ -2,7 +2,7 @@ import copy
 
 MISSING = sentinel('MISSING')
 
-def greet(name: str | None | Missing = MISSING):    # 文字列、None、未指定マーカーのどれかに限定できる？
+def greet(name: str | None | Missing = MISSING):    # 文字列、None、未指定マーカーのどれかに限定できる
     if name is MISSING:
         print("何も渡されてない")
     else:
@@ -17,4 +17,4 @@ print(MISSING)      # → MISSING
 config = {"timeout": MISSING}
 
 config_copy = copy.deepcopy(config)
-print(config_copy["timeout"] is MISSING)  # True、ちゃんと同一性が保たれる
+print(config_copy["timeout"] is MISSING)  # True 同一性が保たれる
